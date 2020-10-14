@@ -13,6 +13,13 @@
 		2E978BFA2536E79500CA65FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E978BF82536E79500CA65FF /* Main.storyboard */; };
 		2E978BFC2536E79700CA65FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E978BFB2536E79700CA65FF /* Assets.xcassets */; };
 		2E978BFF2536E79700CA65FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E978BFD2536E79700CA65FF /* LaunchScreen.storyboard */; };
+		2E978C0A2536E84800CA65FF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E978C092536E84800CA65FF /* opencv2.framework */; };
+		2E978C0C2536E86000CA65FF /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E978C0B2536E86000CA65FF /* Photos.framework */; };
+		2E978C0E2536E87100CA65FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E978C0D2536E87100CA65FF /* CoreGraphics.framework */; };
+		2E978C102536E87800CA65FF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E978C0F2536E87800CA65FF /* CoreMedia.framework */; };
+		2E978C122536E88100CA65FF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E978C112536E88100CA65FF /* CoreFoundation.framework */; };
+		2E978C142536E88900CA65FF /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E978C132536E88900CA65FF /* Accelerate.framework */; };
+		2E978C1B2536E90000CA65FF /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2E978C1A2536E90000CA65FF /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,16 @@
 		2E978BFB2536E79700CA65FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E978BFE2536E79700CA65FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E978C002536E79700CA65FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E978C092536E84800CA65FF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		2E978C0B2536E86000CA65FF /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		2E978C0D2536E87100CA65FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E978C0F2536E87800CA65FF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2E978C112536E88100CA65FF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2E978C132536E88900CA65FF /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		2E978C182536E90000CA65FF /* Face_Recognition_Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Face_Recognition_Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E978C192536E90000CA65FF /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		2E978C1A2536E90000CA65FF /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		2E978C1C2536E94600CA65FF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E978C142536E88900CA65FF /* Accelerate.framework in Frameworks */,
+				2E978C122536E88100CA65FF /* CoreFoundation.framework in Frameworks */,
+				2E978C102536E87800CA65FF /* CoreMedia.framework in Frameworks */,
+				2E978C0E2536E87100CA65FF /* CoreGraphics.framework in Frameworks */,
+				2E978C0C2536E86000CA65FF /* Photos.framework in Frameworks */,
+				2E978C0A2536E84800CA65FF /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,7 @@
 			children = (
 				2E978BF12536E79500CA65FF /* Face_Recognition_Project */,
 				2E978BF02536E79500CA65FF /* Products */,
+				2E978C062536E81A00CA65FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,56 @@
 		2E978BF12536E79500CA65FF /* Face_Recognition_Project */ = {
 			isa = PBXGroup;
 			children = (
-				2E978BF22536E79500CA65FF /* AppDelegate.swift */,
-				2E978BF42536E79500CA65FF /* SceneDelegate.swift */,
+				2E978C172536E8D500CA65FF /* Misc */,
+				2E978C162536E8C800CA65FF /* Delegates */,
+				2E978C152536E8C000CA65FF /* OpenCV */,
 				2E978BF62536E79500CA65FF /* ViewController.swift */,
 				2E978BF82536E79500CA65FF /* Main.storyboard */,
-				2E978BFB2536E79700CA65FF /* Assets.xcassets */,
 				2E978BFD2536E79700CA65FF /* LaunchScreen.storyboard */,
 				2E978C002536E79700CA65FF /* Info.plist */,
 			);
 			path = Face_Recognition_Project;
+			sourceTree = "<group>";
+		};
+		2E978C062536E81A00CA65FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E978C132536E88900CA65FF /* Accelerate.framework */,
+				2E978C112536E88100CA65FF /* CoreFoundation.framework */,
+				2E978C0F2536E87800CA65FF /* CoreMedia.framework */,
+				2E978C0D2536E87100CA65FF /* CoreGraphics.framework */,
+				2E978C0B2536E86000CA65FF /* Photos.framework */,
+				2E978C092536E84800CA65FF /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E978C152536E8C000CA65FF /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				2E978C192536E90000CA65FF /* OpenCVWrapper.h */,
+				2E978C1A2536E90000CA65FF /* OpenCVWrapper.mm */,
+				2E978C182536E90000CA65FF /* Face_Recognition_Project-Bridging-Header.h */,
+				2E978C1C2536E94600CA65FF /* PrefixHeader.pch */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		2E978C162536E8C800CA65FF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2E978BF22536E79500CA65FF /* AppDelegate.swift */,
+				2E978BF42536E79500CA65FF /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2E978C172536E8D500CA65FF /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2E978BFB2536E79700CA65FF /* Assets.xcassets */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +164,7 @@
 				TargetAttributes = {
 					2E978BEE2536E79500CA65FF = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -140,6 +206,7 @@
 			files = (
 				2E978BF72536E79500CA65FF /* ViewController.swift in Sources */,
 				2E978BF32536E79500CA65FF /* AppDelegate.swift in Sources */,
+				2E978C1B2536E90000CA65FF /* OpenCVWrapper.mm in Sources */,
 				2E978BF52536E79500CA65FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,8 +351,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3B6Q657GW;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Face_Recognition_Project/OpenCV/PrefixHeader.pch";
 				INFOPLIST_FILE = Face_Recognition_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +363,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.solano.opencv.Face-Recognition-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Face_Recognition_Project/OpenCV/Face_Recognition_Project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,8 +374,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3B6Q657GW;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Face_Recognition_Project/OpenCV/PrefixHeader.pch";
 				INFOPLIST_FILE = Face_Recognition_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +386,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.solano.opencv.Face-Recognition-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Face_Recognition_Project/OpenCV/Face_Recognition_Project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
