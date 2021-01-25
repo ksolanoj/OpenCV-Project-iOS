@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gLd-U0-KzU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hallo sans.otf">
+            <string>HalloSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Selector View Controller-->
+        <scene sceneID="r1Y-OP-zk3">
+            <objects>
+                <viewController id="gLd-U0-KzU" customClass="SelectorViewController" customModule="Face_Recognition_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RfT-Yc-Ayq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJp-1t-a5R">
+                                <rect key="frame" x="57" y="224" width="300" height="155"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT AN OPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mi9-5a-nYk">
+                                        <rect key="frame" x="60" y="15" width="180" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="HalloSans" family="Hallo sans" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-hh-0sN">
+                                        <rect key="frame" x="42" y="61" width="216" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVq-Ol-kRY">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="J3j-rc-8U3"/>
+                                                    <constraint firstAttribute="width" constant="64" id="MBY-8e-SsB"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="camera_icon"/>
+                                                <connections>
+                                                    <action selector="pressedCameraButton:" destination="gLd-U0-KzU" eventType="touchUpInside" id="DR7-0c-pNW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzo-J3-EUz">
+                                                <rect key="frame" x="152" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="64" id="MOH-0Q-3AV"/>
+                                                    <constraint firstAttribute="height" constant="64" id="gVb-mM-iPT"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="photoGallery_icon"/>
+                                                <connections>
+                                                    <action selector="pressedLibraryButton:" destination="gLd-U0-KzU" eventType="touchUpInside" id="bQz-Xh-RLs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.93333333330000001" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mi9-5a-nYk" firstAttribute="top" secondItem="FJp-1t-a5R" secondAttribute="top" constant="15" id="2sW-69-wgw"/>
+                                    <constraint firstAttribute="trailing" secondItem="mi9-5a-nYk" secondAttribute="trailing" constant="60" id="9BB-rF-cSY"/>
+                                    <constraint firstItem="gT5-hh-0sN" firstAttribute="centerX" secondItem="FJp-1t-a5R" secondAttribute="centerX" id="CS2-W3-PsS"/>
+                                    <constraint firstAttribute="height" constant="155" id="Fbb-xh-uve"/>
+                                    <constraint firstAttribute="width" constant="300" id="Jug-BF-GHi"/>
+                                    <constraint firstItem="mi9-5a-nYk" firstAttribute="leading" secondItem="FJp-1t-a5R" secondAttribute="leading" constant="60" id="bUv-lj-V48"/>
+                                    <constraint firstAttribute="bottom" secondItem="gT5-hh-0sN" secondAttribute="bottom" constant="30" id="eTN-Ka-TpJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nT5-bZ-ytT"/>
+                        <color key="backgroundColor" red="0.34509803919999998" green="0.71764705880000002" blue="0.79215686269999996" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FJp-1t-a5R" firstAttribute="top" secondItem="nT5-bZ-ytT" secondAttribute="top" constant="180" id="N5N-Ir-4ol"/>
+                            <constraint firstItem="FJp-1t-a5R" firstAttribute="centerX" secondItem="RfT-Yc-Ayq" secondAttribute="centerX" id="b4a-Mz-Zt3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectorView" destination="FJp-1t-a5R" id="NPq-Nl-Zqd"/>
+                        <segue destination="Diu-rh-KiW" kind="presentation" identifier="selectorToUploadAlert" id="Gzi-6j-eoG"/>
+                        <segue destination="V8V-12-00U" kind="presentation" identifier="selectorToResults" id="sZD-V6-hj9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2g-mg-U12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="86"/>
+        </scene>
+        <!--UploadViewStoryboard-->
+        <scene sceneID="jYh-la-mvz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UploadViewStoryboard" id="Diu-rh-KiW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4h-b4-Acw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="86"/>
+        </scene>
+        <!--ResultsStoryboard-->
+        <scene sceneID="bHV-bi-OZS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ResultsStoryboard" id="V8V-12-00U" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqc-aC-RoA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1075" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera_icon" width="64" height="64"/>
+        <image name="photoGallery_icon" width="64" height="64"/>
+    </resources>
+</document>

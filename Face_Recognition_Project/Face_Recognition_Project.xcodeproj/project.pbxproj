@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ABE62FE25AA2BC100CE20CB /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE62FD25AA2BC100CE20CB /* haarcascade_frontalface_default.xml */; };
+		0ADD564225BCE2A500436F6E /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD564125BCE2A500436F6E /* ResultsViewController.swift */; };
+		0ADD564525BCE2B200436F6E /* ResultsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADD564425BCE2B200436F6E /* ResultsStoryboard.storyboard */; };
+		0AFE39AF25B778A6000040AC /* Hallo sans.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFE39AE25B778A6000040AC /* Hallo sans.otf */; };
+		0AFE39B225B7790B000040AC /* Hallo sans black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFE39B125B7790B000040AC /* Hallo sans black.otf */; };
+		0AFE39B525B779B5000040AC /* Hallo sans light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0AFE39B425B779B5000040AC /* Hallo sans light.otf */; };
+		0AFE39E425B7DF48000040AC /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE39E325B7DF48000040AC /* SelectorViewController.swift */; };
+		0AFE39E825B7E8B2000040AC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE39E725B7E8B2000040AC /* Response.swift */; };
+		0AFE39ED25B88C2D000040AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE39EC25B88C2D000040AC /* NetworkManager.swift */; };
+		0AFE39F325B8A2B2000040AC /* SelectorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFE39F225B8A2B2000040AC /* SelectorStoryboard.storyboard */; };
+		0AFE39F725B8A399000040AC /* UploadViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFE39F625B8A399000040AC /* UploadViewStoryboard.storyboard */; };
+		0AFE39FA25B8A3AF000040AC /* UploadViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE39F925B8A3AF000040AC /* UploadViewViewController.swift */; };
 		2E978BF32536E79500CA65FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E978BF22536E79500CA65FF /* AppDelegate.swift */; };
 		2E978BF52536E79500CA65FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E978BF42536E79500CA65FF /* SceneDelegate.swift */; };
 		2E978BF72536E79500CA65FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E978BF62536E79500CA65FF /* ViewController.swift */; };
@@ -23,6 +35,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ABE62FD25AA2BC100CE20CB /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		0ADD564125BCE2A500436F6E /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		0ADD564425BCE2B200436F6E /* ResultsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultsStoryboard.storyboard; sourceTree = "<group>"; };
+		0AFE39AE25B778A6000040AC /* Hallo sans.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallo sans.otf"; sourceTree = "<group>"; };
+		0AFE39B125B7790B000040AC /* Hallo sans black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallo sans black.otf"; sourceTree = "<group>"; };
+		0AFE39B425B779B5000040AC /* Hallo sans light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallo sans light.otf"; sourceTree = "<group>"; };
+		0AFE39E325B7DF48000040AC /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
+		0AFE39E725B7E8B2000040AC /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		0AFE39EC25B88C2D000040AC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0AFE39F225B8A2B2000040AC /* SelectorStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectorStoryboard.storyboard; sourceTree = "<group>"; };
+		0AFE39F625B8A399000040AC /* UploadViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UploadViewStoryboard.storyboard; sourceTree = "<group>"; };
+		0AFE39F925B8A3AF000040AC /* UploadViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewViewController.swift; sourceTree = "<group>"; };
 		2E978BEF2536E79500CA65FF /* Face_Recognition_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Face_Recognition_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E978BF22536E79500CA65FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E978BF42536E79500CA65FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +84,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ADD564025BCE29500436F6E /* ResultsView */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD564125BCE2A500436F6E /* ResultsViewController.swift */,
+				0ADD564425BCE2B200436F6E /* ResultsStoryboard.storyboard */,
+			);
+			path = ResultsView;
+			sourceTree = "<group>";
+		};
+		0AFE39AD25B77892000040AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0AFE39B425B779B5000040AC /* Hallo sans light.otf */,
+				0AFE39AE25B778A6000040AC /* Hallo sans.otf */,
+				0AFE39B125B7790B000040AC /* Hallo sans black.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0AFE39E625B7E89E000040AC /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				0AFE39E725B7E8B2000040AC /* Response.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		0AFE39EB25B88C1B000040AC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0AFE39EC25B88C2D000040AC /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0AFE39EF25B8A278000040AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD564025BCE29500436F6E /* ResultsView */,
+				0AFE39F525B8A329000040AC /* UploadAlertView */,
+				0AFE39F125B8A29A000040AC /* SelectorView */,
+				0AFE39F025B8A286000040AC /* MenuView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0AFE39F025B8A286000040AC /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				2E978BF62536E79500CA65FF /* ViewController.swift */,
+				2E978BF82536E79500CA65FF /* Main.storyboard */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		0AFE39F125B8A29A000040AC /* SelectorView */ = {
+			isa = PBXGroup;
+			children = (
+				0AFE39E325B7DF48000040AC /* SelectorViewController.swift */,
+				0AFE39F225B8A2B2000040AC /* SelectorStoryboard.storyboard */,
+			);
+			path = SelectorView;
+			sourceTree = "<group>";
+		};
+		0AFE39F525B8A329000040AC /* UploadAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				0AFE39F925B8A3AF000040AC /* UploadViewViewController.swift */,
+				0AFE39F625B8A399000040AC /* UploadViewStoryboard.storyboard */,
+			);
+			path = UploadAlertView;
+			sourceTree = "<group>";
+		};
 		2E978BE62536E79500CA65FF = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +177,13 @@
 		2E978BF12536E79500CA65FF /* Face_Recognition_Project */ = {
 			isa = PBXGroup;
 			children = (
+				0AFE39EB25B88C1B000040AC /* Networking */,
+				0AFE39E625B7E89E000040AC /* Structs */,
+				0AFE39AD25B77892000040AC /* Fonts */,
 				2E978C172536E8D500CA65FF /* Misc */,
 				2E978C162536E8C800CA65FF /* Delegates */,
 				2E978C152536E8C000CA65FF /* OpenCV */,
-				2E978BF62536E79500CA65FF /* ViewController.swift */,
-				2E978BF82536E79500CA65FF /* Main.storyboard */,
+				0AFE39EF25B8A278000040AC /* Views */,
 				2E978BFD2536E79700CA65FF /* LaunchScreen.storyboard */,
 				2E978C002536E79700CA65FF /* Info.plist */,
 			);
@@ -127,6 +226,7 @@
 		2E978C172536E8D500CA65FF /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				0ABE62FD25AA2BC100CE20CB /* haarcascade_frontalface_default.xml */,
 				2E978BFB2536E79700CA65FF /* Assets.xcassets */,
 			);
 			path = Misc;
@@ -159,7 +259,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Kevin Solano Jimenez";
 				TargetAttributes = {
 					2E978BEE2536E79500CA65FF = {
@@ -193,7 +293,14 @@
 			files = (
 				2E978BFF2536E79700CA65FF /* LaunchScreen.storyboard in Resources */,
 				2E978BFC2536E79700CA65FF /* Assets.xcassets in Resources */,
+				0AFE39B525B779B5000040AC /* Hallo sans light.otf in Resources */,
+				0AFE39F725B8A399000040AC /* UploadViewStoryboard.storyboard in Resources */,
+				0ADD564525BCE2B200436F6E /* ResultsStoryboard.storyboard in Resources */,
+				0ABE62FE25AA2BC100CE20CB /* haarcascade_frontalface_default.xml in Resources */,
+				0AFE39B225B7790B000040AC /* Hallo sans black.otf in Resources */,
 				2E978BFA2536E79500CA65FF /* Main.storyboard in Resources */,
+				0AFE39F325B8A2B2000040AC /* SelectorStoryboard.storyboard in Resources */,
+				0AFE39AF25B778A6000040AC /* Hallo sans.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,10 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFE39FA25B8A3AF000040AC /* UploadViewViewController.swift in Sources */,
 				2E978BF72536E79500CA65FF /* ViewController.swift in Sources */,
 				2E978BF32536E79500CA65FF /* AppDelegate.swift in Sources */,
 				2E978C1B2536E90000CA65FF /* OpenCVWrapper.mm in Sources */,
+				0AFE39ED25B88C2D000040AC /* NetworkManager.swift in Sources */,
+				0ADD564225BCE2A500436F6E /* ResultsViewController.swift in Sources */,
 				2E978BF52536E79500CA65FF /* SceneDelegate.swift in Sources */,
+				0AFE39E825B7E8B2000040AC /* Response.swift in Sources */,
+				0AFE39E425B7DF48000040AC /* SelectorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +371,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -319,6 +432,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -354,7 +468,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3B6Q657GW;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Face_Recognition_Project/OpenCV/PrefixHeader.pch";
 				INFOPLIST_FILE = Face_Recognition_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -377,7 +491,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B3B6Q657GW;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Face_Recognition_Project/OpenCV/PrefixHeader.pch";
 				INFOPLIST_FILE = Face_Recognition_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Hallo sans black.otf">
+            <string>Hallosans-Black</string>
+        </array>
+        <array key="Hallo sans.otf">
+            <string>HalloSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Face_Recognition_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACE SCANNER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr3-Ip-EHN">
+                                <rect key="frame" x="53" y="85" width="269" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="aND-ev-FD4"/>
+                                    <constraint firstAttribute="height" constant="47" id="kTL-l1-LG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Hallosans-Black" family="Hallo sans" pointSize="45"/>
+                                <color key="textColor" red="0.34509803921568627" green="0.71764705882352942" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="gj3-Mz-XVd">
+                                <rect key="frame" x="53" y="397" width="269" height="134"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqR-MH-Th2">
+                                        <rect key="frame" x="0.0" y="0.0" width="269" height="51"/>
+                                        <color key="backgroundColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="269" id="RTU-cQ-egX"/>
+                                            <constraint firstAttribute="height" constant="51" id="yz5-qo-a5x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HalloSans" family="Hallo sans" pointSize="30"/>
+                                        <state key="normal" title="Detect Face">
+                                            <color key="titleColor" red="0.34509803919999998" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="detectFaceFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0h-39-KK7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNN-zh-oN8">
+                                        <rect key="frame" x="0.0" y="83" width="269" height="51"/>
+                                        <color key="backgroundColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="269" id="2aR-AD-FZJ"/>
+                                            <constraint firstAttribute="height" constant="51" id="ZPK-CX-6nB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HalloSans" family="Hallo sans" pointSize="30"/>
+                                        <state key="normal" title="Upload Photo">
+                                            <color key="titleColor" red="0.34509803919999998" green="0.71764705880000002" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uploadPhotoFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bkm-BJ-3YG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="face_detect_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0bS-i2-Hef">
+                                <rect key="frame" x="67" y="171" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="fow-i3-bya">
+                                <rect key="frame" x="16" y="604" width="343" height="53"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tec_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RCG-7W-YaR">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="9yV-Uv-OVh"/>
+                                            <constraint firstAttribute="width" constant="127" id="bf9-Bo-EbO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="opencv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4mz-30-SFc">
+                                        <rect key="frame" x="155" y="0.0" width="40" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="L8K-kk-IVD"/>
+                                            <constraint firstAttribute="height" priority="999" constant="55" id="i1v-m9-68j"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tensorflow_logo" translatesAutoresizingMaskIntoConstraints="NO" id="K5k-Va-Gca">
+                                        <rect key="frame" x="223" y="0.0" width="120" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="D1r-Lz-YYS"/>
+                                            <constraint firstAttribute="height" priority="999" constant="39" id="GWI-LE-Ckt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.93333333333333335" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gj3-Mz-XVd" secondAttribute="bottom" constant="136" id="L1z-42-Faq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fow-i3-bya" secondAttribute="bottom" constant="10" id="U3n-ia-hUH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vr3-Ip-EHN" secondAttribute="trailing" constant="53" id="eBG-Gb-4wz"/>
+                            <constraint firstItem="Vr3-Ip-EHN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="gKK-bl-VJM"/>
+                            <constraint firstItem="gj3-Mz-XVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="gba-sE-I4E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gj3-Mz-XVd" secondAttribute="trailing" constant="53" id="ia9-Nq-nzJ"/>
+                            <constraint firstItem="Vr3-Ip-EHN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="nAi-aa-2yt"/>
+                            <constraint firstItem="fow-i3-bya" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pWa-3b-aV3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detectFaceButton" destination="pqR-MH-Th2" id="8Qg-WP-Q0X"/>
+                        <outlet property="uploadPhotoButton" destination="yNN-zh-oN8" id="lTu-A3-oF9"/>
+                        <segue destination="1CK-d9-g0z" kind="presentation" identifier="menuToSelect" id="ieA-kJ-l3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-527" y="86"/>
+        </scene>
+        <!--SelectorStoryboard-->
+        <scene sceneID="9qT-X6-HUW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectorStoryboard" id="1CK-d9-g0z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sO7-BF-jk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="85"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="face_detect_logo" width="512" height="512"/>
+        <image name="opencv_logo" width="1200" height="1478"/>
+        <image name="tec_logo" width="1269" height="296"/>
+        <image name="tensorflow_logo" width="1024" height="334"/>
+    </resources>
+</document>
